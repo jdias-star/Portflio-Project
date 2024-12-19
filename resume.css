@@ -1,0 +1,148 @@
+body{
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(images/background1.png);
+    
+}
+.container{
+    background-color: white;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "sidebar main main";
+    max-width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px rgba(40, 40, 40, 0.427);
+    
+}
+
+
+sidebar{
+    grid-area: sidebar;
+    background-color: #d84e00;
+    padding: 5px;
+    color: white;
+}
+
+h2{
+    padding-top: 10px;
+}
+
+main{
+    grid-area: main;
+    margin: 0px 10px 10px 10px;
+}
+
+img{
+    border-radius: 50%;
+    display: block;
+    margin-left: 0;
+    align-items: center;
+}
+
+h1{
+    margin-left: 0;
+}
+header{
+    display: flex;
+    grid-area: header;
+    background-color: #1F3B4D;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-weight: bolder;
+    grid-area: header;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.text{
+    text-align: right;
+    margin-right: 5px;
+    margin-left: 5px;
+
+}
+
+.job{
+    margin: 10px;
+}
+
+.job-title{
+    font-weight: bold;
+}
+
+.job-date{
+    font-style: italic;
+    color: #666;
+}
+
+ul{
+    padding: 3px;
+}
+
+.skill-list{
+    margin: 10px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skill-list span{
+    background-color: #A2B9C7;
+    border-radius: 10px;
+    padding: 5px;
+    /* margin: 20px;
+    margin-top: 10px; */
+}
+
+.job{
+    list-style-type: none;
+}
+
+.projects{
+    list-style-type: none;
+}
+
+sidebar p{
+    padding: 5px;
+}
+.projects li{
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+.lang{
+    list-style-type: none;
+    margin: 10px;
+}
+
+.lang li{
+    padding: 5px;
+}
+
+sidebar hr{
+    display:block; 
+    height: 1px; 
+    border:0; 
+    border-top: 1px solid #B7C9D5; 
+    margin: 1em 0; 
+    padding: 0; 
+}
+
+
+p{
+    padding: 5px;
+}
+
+@media (max-width: 768px){
+    .container{
+        grid-template: 
+        "header"
+        "sidebar"
+        "main";
+    }
+}

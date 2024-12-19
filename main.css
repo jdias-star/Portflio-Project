@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+  letter-spacing: .5px;
+  }
+  
+  #hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(images/background1.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0 20px;
+  }
+
+
+  body {
+    font-family: 'Bangers', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3{
+    letter-spacing: 2px;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: white;
+    z-index: 1000;
+    border-bottom: 1px white solid;
+  }
+  
+  nav .logo {
+    letter-spacing: 3px;
+    position: absolute;
+    left: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    letter-spacing: 1px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ff5f00;
+    border-radius: 5px;
+  }
+
+  footer {
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: white;
+    text-align: center;
+    padding: .2vh;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
